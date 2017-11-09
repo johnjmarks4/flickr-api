@@ -1,0 +1,7 @@
+<%= form_tag url: "/static_pages/home", method: "get" do %>
+  <%= label_tag "Search for:" %>
+  <%= text_field_tag :id %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
+<%= image_tag @picture %>
