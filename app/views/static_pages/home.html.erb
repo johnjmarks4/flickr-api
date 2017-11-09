@@ -4,4 +4,8 @@
   <%= submit_tag "Submit" %>
 <% end %>
 
-<%= image_tag @picture %>
+<% if !@pictures.empty? %>
+  <% @pictures.each do |pic| %>
+    <%= image_tag pic %>
+  <% end %>
+<% end %>
