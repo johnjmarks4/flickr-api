@@ -16,7 +16,7 @@
 
   <% if !@pictures.empty? %>
     <% @pictures.each_with_index do |pic, i| %>
-      <%= content_tag(:div, '', class: "img", style: "background-image:url('#{pic}');", onclick: "location.href='#{@links[i]}'") %>
+      <%= link_to(content_tag(:div, '', class: "img", style: "background-image:url('#{pic}');"), @links[i]) %>
     <% end %>
   <% end %>
 
