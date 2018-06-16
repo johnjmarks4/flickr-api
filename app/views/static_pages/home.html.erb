@@ -1,11 +1,23 @@
-<%= form_tag url: "/static_pages/home", method: "get" do %>
-  <%= label_tag "Search for:" %>
-  <%= text_field_tag :id %>
-  <%= submit_tag "Submit" %>
-<% end %>
+<div id="top_pane">
 
-<% if !@pictures.empty? %>
-  <% @pictures.each do |pic| %>
-    <%= image_tag pic %>
+  <%= content_tag :div, id: "search_bar" do %>
+    <%= form_tag url: "/static_pages/home", method: "get" do %>
+      <%= label_tag "Search for:" %>
+      <%= text_field_tag :id %>
+      <%= content_tag :div, id: "buttons" do %>
+        <%= submit_tag "Submit" %>
+      <% end %>
+    <% end %>
   <% end %>
-<% end %>
+
+</div>
+
+<div id="bottom_pane">
+
+  <% if !@pictures.empty? %>
+    <% @pictures.each do |pic| %>
+      <%= content_tag(:div, '', class: "img", style: "background-image:url('#{pic}');") %>
+    <% end %>
+  <% end %>
+
+</div>
