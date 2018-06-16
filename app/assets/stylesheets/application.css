@@ -43,6 +43,7 @@
 #bottom_pane .img {
   height: 100px;
   width: 100px;
+  display: inline-block;
   background-position: 50% 50%;
   background-repeat:   no-repeat;
   background-size:     cover;

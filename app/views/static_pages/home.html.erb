@@ -15,8 +15,8 @@
 <div id="bottom_pane">
 
   <% if !@pictures.empty? %>
-    <% @pictures.each do |pic| %>
-      <%= content_tag(:div, '', class: "img", style: "background-image:url('#{pic}');") %>
+    <% @pictures.each_with_index do |pic, i| %>
+      <%= content_tag(:div, '', class: "img", style: "background-image:url('#{pic}');", onclick: "location.href='#{@links[i]}'") %>
     <% end %>
   <% end %>
 
