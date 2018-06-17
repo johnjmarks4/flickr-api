@@ -12,6 +12,13 @@
 #top_pane {
   height: 400px;
   position: relative;
+  background: linear-gradient(
+    rgba(238, 226, 220, 0.5),
+    rgba(238, 226, 220, 0.5)
+    ),
+    url(blossom-macro-nature-photography.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #search_bar {
