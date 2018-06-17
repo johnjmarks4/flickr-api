@@ -1,5 +1,9 @@
 <div id="top_pane">
 
+  <div id="logo_container">
+    <div id="logo"></div>
+  </div>
+
   <%= content_tag :div, id: "search_bar" do %>
     <%= form_tag url: "/static_pages/home", method: "get" do %>
       <%= label_tag "Search for:" %>
