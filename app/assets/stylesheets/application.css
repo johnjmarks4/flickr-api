@@ -4,15 +4,16 @@
  */
 
 html, body {
-  background-color: rgb(238, 226, 220);
+  background-color: rgb(233, 233, 233);
+  height: 100%;
 }
 
 #top_pane {
-  height: 600px;
+  height: 100%;
   position: relative;
   background: linear-gradient(
-    rgba(237, 199, 183, 0.8),
-    rgba(237, 199, 183, 0.8)
+    rgba(238, 226, 220, 0.8),
+    rgba(238, 226, 220, 0.8)
     ),
     url(blossom-macro-nature-photography.jpg);
   background-repeat: no-repeat;
