@@ -22,13 +22,9 @@
     <% end %>
   </div>
 
-  <!-- <div id="logo_container">
-    <div id="logo"></div>
-  </div> -->
-
   <%= content_tag :div, id: "search_bar" do %>
     <%= form_tag url: "/static_pages/home", method: "get" do %>
-      <%= text_field_tag :id, "Type your Flickr username here", onfocus: "if (this.value == 'Type your Flickr username here') {this.value=''}" %>
+      <%= text_field_tag :id, "Type your Flickr username here", autocomplete: "off", onfocus: "if (this.value == 'Type your Flickr username here') {this.value=''}", onblur: "if (this.value == '') {this.value='Type your Flickr username here'}" %>
       <%= content_tag :div, id: "buttons" do %>
         <%= submit_tag "Submit" %>
       <% end %>
