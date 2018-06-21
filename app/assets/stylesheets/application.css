@@ -91,18 +91,6 @@ html, body {
   background-repeat: no-repeat;
 } */
 
-#name p {
-  position: relative;
-  top: 5%;
-  font-family: 'Jamoer', 'Bull', sans-serif;
-  color: #ac3b61;
-  text-align: center;
-  line-height: 30px;
-  font-weight: bold;
-  font-size: 1.2rem;
-  letter-spacing: 0.2rem;
-}
-
 #search_bar {
   position: absolute;
   top: 70%;

@@ -26,11 +26,6 @@
     <div id="logo"></div>
   </div> -->
 
-  <!-- <div id="name">
-    <p>Type your Flickr</p>
-    <p>username below</p>
-  </div> -->
-
   <%= content_tag :div, id: "search_bar" do %>
     <%= form_tag url: "/static_pages/home", method: "get" do %>
       <%= text_field_tag :id, "Type your Flickr username here", onfocus: "if (this.value == 'Type your Flickr username here') {this.value=''}" %>
