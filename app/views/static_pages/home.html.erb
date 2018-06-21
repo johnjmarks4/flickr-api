@@ -31,6 +31,10 @@
     <% end %>
   <% end %>
 
+  <% if !flash.empty? %>
+    <p id="flash"><%= flash[:alert] %></p>
+  <% end %>
+
 </div>
 
 <div id="bottom_pane">
