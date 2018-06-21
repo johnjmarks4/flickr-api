@@ -1,12 +1,38 @@
 <div id="top_pane">
 
-  <div id="logo_container">
-    <div id="logo"></div>
+  <h1>Flickr</h1>
+
+  <div class="border", id="left_border">
+    <% (1..10).each do |x|%>
+      <% if x % 2 == 0 %>
+        <div class="right"></div>
+      <% else %>
+        <div></div>
+      <% end %>
+    <% end %>
   </div>
+
+  <div class="border", id="right_border">
+    <% (1..10).each do |x|%>
+      <% if x % 2 == 0 %>
+        <div class="right"></div>
+      <% else %>
+        <div></div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <!-- <div id="logo_container">
+    <div id="logo"></div>
+  </div> -->
+
+  <!-- <div id="name">
+    <p>Type your Flickr</p>
+    <p>username below</p>
+  </div> -->
 
   <%= content_tag :div, id: "search_bar" do %>
     <%= form_tag url: "/static_pages/home", method: "get" do %>
-      <%= label_tag "Search for:" %>
       <%= text_field_tag :id %>
       <%= content_tag :div, id: "buttons" do %>
         <%= submit_tag "Submit" %>

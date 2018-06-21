@@ -8,6 +8,12 @@ html, body {
   height: 100%;
 }
 
+@font-face{
+  font-family: "Komoda";
+  src: url('Komoda.ttf'),
+  url('Komoda.eot'); /* IE */
+}
+
 #top_pane {
   height: 100%;
   position: relative;
@@ -20,7 +26,46 @@ html, body {
   background-size: cover;
 }
 
-#logo_container {
+#top_pane h1 {
+  position: relative;
+  top: 50px;
+  font-family: "Komoda";
+  font-size: 500px;
+  color: #ac3b61;
+  text-align: center;
+}
+
+#left_border {
+  height: 100%;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+#right_border {
+  height: 100%;
+  width: 50px;
+  float: right;
+  position: absolute;
+  top: 0;
+  right: 30px;
+}
+
+.border div {
+  background-image: url(flower.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  margin-top: 18px;
+}
+
+.right {
+  position: relative !important;
+  left: 10px !important;
+}
+
+/*#logo_container {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -31,21 +76,45 @@ html, body {
   width: 110px;
   background-image: url(584abe1a2912007028bd932e.png);
   background-size: contain;
+}*/
+
+/*
+#name {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  background-image: url(name.png);
+  background-size: contain;
+  height: 350px;
+  width: 350px;
+  background-repeat: no-repeat;
+} */
+
+#name p {
+  position: relative;
+  top: 5%;
+  font-family: 'Jamoer', 'Bull', sans-serif;
+  color: #ac3b61;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 #search_bar {
   position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
-  width: 500px;
+  width: 400px;
   color: rgb(18, 60, 105);
 }
 
 #search_bar input {
   height: 50px;
-  width: 500px;
+  width: 400px;
   border-width: thick;
   border-radius: 5px;
   border-color: rgb(18, 60, 105);
@@ -59,7 +128,7 @@ html, body {
 #search_bar #buttons input {
   display: block;
   margin: 0 auto;
-  width: 250px;
+  width: 150px;
   margin-top: 15px;
   padding-left: 0px;
   color: rgb(18, 60, 105);
