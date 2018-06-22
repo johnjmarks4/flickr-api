@@ -30,7 +30,7 @@ html, body {
   position: relative;
   top: 50px;
   font-family: "Komoda";
-  font-size: 500px;
+  font-size: 400px;
   color: #ac3b61;
   text-align: center;
 }
@@ -67,16 +67,16 @@ html, body {
 
 #search_bar {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
-  width: 400px;
+  width: 370px;
   color: rgb(18, 60, 105);
 }
 
 #search_bar input {
-  height: 50px;
-  width: 400px;
+  height: 40px;
+  width: 350px;
   border-width: thick;
   border-radius: 5px;
   border-color: rgb(18, 60, 105);
@@ -127,5 +127,5 @@ html, body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 5%;
+  bottom: 10%;
 }
