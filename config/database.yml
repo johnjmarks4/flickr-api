@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: flickr_production
-  username: flickr
+  username: postgres
   password: <%= ENV['FLICKR_DATABASE_PASSWORD'] %>

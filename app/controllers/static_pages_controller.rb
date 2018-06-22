@@ -1,5 +1,8 @@
 require 'flickraw'
 
+FlickRaw.api_key = '509167075411d066c75cb8b8e0a05b40'
+FlickRaw.shared_secret = '20ca916612be59a6'
+
 class StaticPagesController < ApplicationController
   def home
     @pictures = []

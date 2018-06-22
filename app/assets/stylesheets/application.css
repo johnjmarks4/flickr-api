@@ -11,6 +11,7 @@ html, body {
 @font-face{
   font-family: "Komoda";
   src: url('Komoda.ttf'),
+  url('Komoda.otf'),
   url('Komoda.eot'); /* IE */
 }
 
