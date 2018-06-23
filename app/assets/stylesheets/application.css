@@ -8,11 +8,13 @@ html, body {
   height: 100%;
 }
 
-@font-face{
-  font-family: "Komoda";
-  src: url('Komoda.ttf'),
-  url('Komoda.otf'),
-  url('Komoda.eot'); /* IE */
+@font-face {
+  font-family: Komoda;
+  src: url("Komoda.otf"),
+  url("Komoda.ttf"),
+  url("Komoda.eot"),
+  url("Komoda.woff"),
+  url("Komoda.svg");
 }
 
 #top_pane {
